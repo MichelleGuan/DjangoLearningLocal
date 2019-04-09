@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+	<p>This is comes from home.html</p>
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+	<p>This is comes from home.html</p>
+	{% placeholder "content" %}
+	<p>This is comes from home.html</p>
+{% endblock content %}
